@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Cifrario</title>
+</head>
+<body>
+    <main class="main">
+        <section class="page-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1>Esercizi di vacanza</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Cifrario -->
+        <section class="cifrario">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="exercise">
+                            <h1>Cifrario</h1>
+                            <p class="task">Data una stringa, restituire la versione in alfabeto farfallino (le vocali devono essere trasformate in questo modo: a -> afa, e -> efe, i -> ifi, o -> ofo, u- > ufu)</p>        
+                            <p>Esempio:</h4>
+                            <div class="example">
+                                <p>stringa = <span id="cifrarioString"></span>;</p>
+                                <p class="comment">// risultato mafarcofo</p>
+                                <p class="answer" >Risposta: <span id="cifrarioAnswer"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Stringa infinita -->
+        <section class="string-infinity">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="exercise">
+                            <h1>Stringa "infinita"</h1>
+                            <p class="task">Data una stringa con un pattern ripetuto (es. ABCDE), ipoteticamente infinita, restituire le lettere racchiuse fra due indici (es. 13 e 16) inclusi.</p>        
+                            <p>Esempio:</h4>
+                            <div class="example">
+                                <p>stringa = <span id="infinityString"></span>;</p>
+                                <p>start = <span id="startInfinityString"></span>;</p>
+                                <p>end = <span id="endInfinityString"></span>;</p>
+                                <p class="comment">// risultato DEAB</p>
+                                <p class="answer" >Risposta: <span id="infinityStringAnswer"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Array -->
+        <section class="array">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>Array</h2>
+                    </div>
+                </div>
+                <!-- Facile -->
+                <div class="row">
+                    <div class="col-8">
+                        <div class="exercise">
+                            <h1>Facile</h1>
+                            <p class="task">Dato un array di numeri interi, restituire un array con solo i numeri pari</p>        
+                            <p>Esempio:</h4>
+                            <div class="example">
+                                <p>array = <span id="facileArray"></span>;</p>
+                                <p class="comment">// risultato [2,10,6,4]</p>
+                                <p class="answer" >Risposta: <span id="facileArrayAnswer"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Medio -->
+                <div class="row">
+                    <div class="col-8">
+                        <div class="exercise">
+                            <h1>Medio</h1>
+                            <p class="task">Dato un array di numeri interi, creare una funzione che sia in grado di restituire un nuovo array con solo i numeri pari o solo i numeri dispari (su richiesta dell'utente)</p>        
+                            <p>Esempio:</h4>
+                            <div class="example">
+                                <p>array = [1,3,5,2,10,6,4,9]</p>
+                                <p>even = true</p>
+                                <p class="comment">// risultato [2,10,6,4]</p>
+                                <p>array = [1,3,5,2,10,6,4,9]</p>
+                                <p>even = false</p>
+                                <p class="comment">// risultato [1,3,5,9]</p>
+                                <div>
+                                    <span><button id="even" value="1">Even</button></span>
+                                    <span><button id="odd" value="0">Odd</button></span>
+                                </div>
+                                <div class="answer" >Risposta: <span id="medioArrayAnswer">Scegli Pari o Dispari</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Medio-2 -->
+                <div class="row">
+                    <div class="col-8">
+                        <div class="exercise">
+                            <h1>Medio-2</h1>
+                            <p class="task">Dati un numero intero e un array di numeri interi, creare una funzione che sia in grado di restituire un nuovo array contenente solo i numeri divisibili per il numero intero specificato</p>        
+                            <p>Esempio:</h4>
+                            <div class="example">
+                                <p>userNumber = 5</p>
+                                <p>array = [1,3,5,2,10,6,4,9]</p>
+                                <p class="comment">// risultato [5,10]</p>
+                                <div>
+                                    <label for="userNumber">Choose number:</label>
+                                        <select name="userNumber" id="userNumber" >
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option selected value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                        <button id="btnControllUserNumber">Controll</button>
+                                </div>
+                                <div class="answer" >Risposta: <span id="medioArrayVersione2Answer"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Difficile -->
+                <div class="row">
+                    <div class="col-8">
+                        <div class="exercise">
+                            <h1>Medio</h1>
+                            <p class="task">Dato un array di oggetti, ordinare l'array in base al valore di una proprietà degli oggetti (es. name: “Marco”, age: 22)</p>        
+                            <p>Esempio:</h4>
+                            <div class="example">
+                                <p>array = [
+                                        { name: "Marco", age: 22 },
+                                        { name: "Anna", age: 24 },
+                                        { name: "Luca", age: 17 },
+                                        { name: "Gianni", age: 53 }
+                                    ];
+                                </p> 
+                                <p class="comment">
+                                    // risultato
+                                    <br>
+                                    array = [
+                                    { name: "Luca", age: 17 },
+                                    { name: "Marco", age: 22 },
+                                    { name: "Anna", age: 24 },
+                                    { name: "Gianni", age: 53 }
+                                    ];
+                     
+                                </p>
+                                <div class="answer" >Risposta: <span id="difficileArrayAnswer"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

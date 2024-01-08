@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+body {
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+}
+.container {
+	max-width: 1250px;
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.row > [class^='col'] {
+	padding: 0 25px;
+}
+
+.col-8 {
+	flex-basis: calc((100% / 12) * 8);
+}
+
+h1 {
+	margin-bottom: 20px;
+	font-size: 46px;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+.task {
+	font-style: italic;
+}
+
+.example {
+	background-color:rgb(247, 246, 243);
+	padding: 40px 30px;
+}
+
+.comment {
+	font-weight: 200;
+	margin-bottom: 20px;
+}
+
+.exercise {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-weight: 300;
+}
+
+.exercise h1 {
+	font-size: 26px;
+	margin-bottom: 10px;
+}
+
+.answer {
+	margin-top: 20px;
+	font-weight: 500;
+}
+
+.answer span {
+	color: red;
+	font-weight: 800;
+	font-size: 30px;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.array .container {
+	display: flex;
+	flex-direction: column;
+	gap: 30px
+}
